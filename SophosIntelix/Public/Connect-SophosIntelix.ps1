@@ -1,25 +1,30 @@
 function Connect-SophosIntelix {
     <#
     .SYNOPSIS
-        
+        Connect to Sophos Intelix
     .DESCRIPTION
+        Connect to Sophos Intelix
 
+        To create a client id/client secret follow the guide below. The is a paid service from Sophos and requires a AWS account.
+        https://api.labs.sophos.com/doc/index.html#registration-howto
     .PARAMETER ClientID
         The client ID from the Sophos Central API credential/service principal
     .PARAMETER ClientSecret
         The client secret from the Sophos Central API credential/service principal
     .EXAMPLE
-        Connect-SophosCentral -ClientID "asdkjsdfksjdf" -ClientSecret (Read-Host -AsSecureString -Prompt "Client Secret:")
+        Connect-SophosIntelix -ClientID "asdkjsdfksjdf" -ClientSecret (Read-Host -AsSecureString -Prompt "Client Secret:")
     .LINK
-        https://developer.sophos.com/getting-started-tenant
+        https://api.labs.sophos.com/doc/authentication.html
     #>
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true,
             ParameterSetName = 'StdAuth')]
+        [ValidateNotNullOrEmpty]
         [String]$ClientID,
 
         [Parameter(Mandatory = $true, ParameterSetName = 'StdAuth')]
+        [ValidateNotNullOrEmpty]
         [SecureString]$ClientSecret,
 
         [ValidateSet('us', 'de')]
