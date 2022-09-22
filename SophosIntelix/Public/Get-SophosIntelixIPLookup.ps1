@@ -19,5 +19,5 @@ function Get-SophosIntelixIPLookup {
     )
 
     $uriEndpoint = 'lookup/ip/v1/' + $IPAddress.IPAddressToString
-    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint -Verbose:$Verbose
+    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint
 }

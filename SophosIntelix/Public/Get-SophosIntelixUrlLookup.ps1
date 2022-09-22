@@ -27,5 +27,5 @@ function Get-SophosIntelixUrlLookup {
     }
 
     $uriEndpoint = 'lookup/urls/v1/' + $url
-    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint -Verbose:$Verbose
+    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint
 }

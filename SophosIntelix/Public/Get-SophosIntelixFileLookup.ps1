@@ -19,5 +19,5 @@ function Get-SophosIntelixFileLookup {
     )
 
     $uriEndpoint = 'lookup/files/v1/' + $FileHash
-    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint -Verbose:$Verbose
+    Invoke-SophosIntelixWebRequest -UriEndpoint $uriEndpoint
 }
