@@ -20,11 +20,11 @@ function Connect-SophosIntelix {
     param (
         [Parameter(Mandatory = $true,
             ParameterSetName = 'StdAuth')]
-        [ValidateNotNullOrEmpty]
+        [ValidateNotNullOrEmpty()]
         [String]$ClientID,
 
         [Parameter(Mandatory = $true, ParameterSetName = 'StdAuth')]
-        [ValidateNotNullOrEmpty]
+        [ValidateNotNullOrEmpty()]
         [SecureString]$ClientSecret,
 
         [ValidateSet('us', 'de')]

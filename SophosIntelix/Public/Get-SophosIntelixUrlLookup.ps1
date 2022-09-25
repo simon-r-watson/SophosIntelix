@@ -14,7 +14,7 @@ function Get-SophosIntelixUrlLookup {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty]
+        [ValidateNotNullOrEmpty()]
         [string]$Url
     )
 

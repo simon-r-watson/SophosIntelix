@@ -14,7 +14,7 @@ function Get-SophosIntelixIPLookup {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty]
+        [ValidateNotNullOrEmpty()]
         [System.Net.IPAddress]$IPAddress
     )
 

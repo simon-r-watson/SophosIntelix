@@ -14,7 +14,7 @@ function Get-SophosIntelixFileLookup {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
-        [ValidateNotNullOrEmpty]
+        [ValidateNotNullOrEmpty()]
         [string]$FileHash
     )
 
