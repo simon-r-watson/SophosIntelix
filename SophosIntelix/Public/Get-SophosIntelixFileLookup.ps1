@@ -4,8 +4,8 @@ function Get-SophosIntelixFileLookup {
         
     .DESCRIPTION
 
-    .PARAMETER Url
-        Url you want to look up
+    .PARAMETER FileHash
+        SHA256 hash of the file you want to look up.
     .EXAMPLE
         Get-SophosIntelixFileLookup -FileHash CF19F79B8EE6BC1C83438EA8F6D266496681F686CC87BF1D295126621700A1EB
     .EXAMPLE

@@ -4,8 +4,8 @@ function Get-SophosIntelixUrlLookup {
         
     .DESCRIPTION
 
-    .PARAMETER FileHash
-        SHA256 hash of the file you want to look up.
+    .PARAMETER Url
+        Url you want to look up
     .EXAMPLE
         Get-SophosIntelixUrlLookup -Url www.google.com
     .LINK
